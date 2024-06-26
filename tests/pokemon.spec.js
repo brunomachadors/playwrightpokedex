@@ -14,10 +14,10 @@ test('Select Pokémon Gengar', async ({ page }) => {
   await expect(page.getByLabel('REGIONS Button')).toBeVisible();
   await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
   await expect(
-    page.getByLabel('Select the pokemon gengar', { exact: true })
+    page.getByLabel('Select the pokemon gengar').first()
   ).toBeVisible();
 
   await page.getByLabel('Select the pokemon gengar', { exact: true }).click();
 
-  //await expect(page.getByLabel('Open image of gengar')).toBeVisible();
+  await page.getByLabel('Switch to Photo').click();
 });
