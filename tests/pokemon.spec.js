@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Select Pokémon Gengar', async ({ page }) => {
+test('Select Pokémon Bulbassaur', async ({ page }) => {
   await page.goto('https://brunomachadors.github.io/pokedex/');
 
   await expect(page.getByLabel('POKÉMON Button')).toBeVisible();
@@ -13,11 +13,9 @@ test('Select Pokémon Gengar', async ({ page }) => {
   await expect(page.getByLabel('ITEMS Button')).toBeVisible();
   await expect(page.getByLabel('REGIONS Button')).toBeVisible();
   await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
-  await expect(
-    page.getByLabel('Select the pokemon gengar').first()
-  ).toBeVisible();
+  await expect(page.getByLabel('Select the pokemon bulbasaur')).toBeVisible();
 
-  await page.getByLabel('Select the pokemon gengar', { exact: true }).click();
+  await page.getByLabel('Select the pokemon bulbasaur').click();
 
   await page.getByLabel('Switch to Photo').click();
 });
