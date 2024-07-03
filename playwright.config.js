@@ -31,11 +31,6 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
   },
 
-  timeout: 900000,
-  expect: {
-    timeout: 30000,
-  },
-
   /* Configure projects for major browsers */
   projects: [
     {
@@ -81,3 +76,4 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
