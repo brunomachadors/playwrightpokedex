@@ -58,18 +58,20 @@ test.describe('Verify in batch the correct display of type information', () => {
             await expect(page.getByText('DOUBLE DAMAGEFROM:')).toBeVisible();
             await expect(page.getByRole('img', { name: icon }).first()).toBeVisible();
         });
+        const isImmune = type.immune ? true : false;
+        if (isImmune) {
+            test(`Validate that Immune to ${type.immune} is showed to ${type.name} type`, async ({ page }) => {
+                test.skip(type.immune == " " || type.immune == undefined);
+                await expect(page.getByLabel('Select Type')).toBeVisible();
+                await page.getByLabel(selectType).click();
+                await expect(page.getByLabel('Switch to Info')).toBeVisible();
+                await page.getByLabel('Switch to Info').click();
 
-        test(`Validate that Immune to ${type.immune} is showed to ${type.name} type`, async ({ page }) => {
-            test.skip(type.immune == " " || type.immune == undefined);
-            await expect(page.getByLabel('Select Type')).toBeVisible();
-            await page.getByLabel(selectType).click();
-            await expect(page.getByLabel('Switch to Info')).toBeVisible();
-            await page.getByLabel('Switch to Info').click();
-
-            await expect(page.getByLabel('White Screen').getByText(type.name.toUpperCase())).toBeVisible();
-            await expect(page.getByText('IMUNITIES')).toContainText('IMUNITIES');
-            await expect(page.getByLabel(immune).getByText(type.immune.toUpperCase())).toContainText(type.immune.toUpperCase());
-        });
+                await expect(page.getByLabel('White Screen').getByText(type.name.toUpperCase())).toBeVisible();
+                await expect(page.getByText('IMUNITIES')).toContainText('IMUNITIES');
+                await expect(page.getByLabel(immune).getByText(type.immune.toUpperCase())).toContainText(type.immune.toUpperCase());
+            });
+        }
     });
 });
 

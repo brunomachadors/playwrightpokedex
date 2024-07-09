@@ -43,7 +43,6 @@ export const TYPES = [
     {
         "name": "fire",
         "doubleDamage": "ground",
-        "immune": " "
     },
     {
         "name": "ice",
