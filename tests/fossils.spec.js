@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
-test('Select Pokémon Fossil', async ({ page }) => {
+  //passos de validação do honey.
+  test('Select HONEY', async ({ page }) => { 
 
-// 1 - ITEM EFFECT HONEY
   // Navegar até a página da Pokedex
   await page.goto('https://brunomachadors.github.io/pokedex/');
   await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -27,10 +27,11 @@ test('Select Pokémon Fossil', async ({ page }) => {
   await page.getByLabel('Switch to Photo').click();
   await expect(page.getByLabel('Image of honey')).toBeVisible();
   await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
+});
 
-
-  
-// 2 - ITEM EFFECT ROOT-FOSSIL
+   //passos de validação do root fossil.
+   test('Select ROOT-FOSSIL', async ({ page }) => { 
+     
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -56,10 +57,11 @@ test('Select Pokémon Fossil', async ({ page }) => {
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of root-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
+});
 
+   //passos de validação do claw fossil.
+   test('Select CLAW-FOSSIL', async ({ page }) => { 
 
-  
-// 3- ITEM EFFECT CLAW-FOSSIL
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -85,10 +87,11 @@ test('Select Pokémon Fossil', async ({ page }) => {
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of claw-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
+});
 
-
-
-// 4 - ITEM EFFECT HELIX-FOSSIL
+   //passos de validação do helix fossil.
+   test('Select HELIX-FOSSIL', async ({ page }) => { 
+     
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -114,10 +117,11 @@ test('Select Pokémon Fossil', async ({ page }) => {
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of helix-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
+});
 
+   //passos de validação do dome fossil.
+   test('Select DOME-FOSSIL', async ({ page }) => { 
 
-  
-// 5 - ITEM EFFECT DOME-FOSSIL
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -143,10 +147,11 @@ test('Select Pokémon Fossil', async ({ page }) => {
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of dome-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
+});
 
-
-
-// 6 - ITEM EFFECT OLD-AMBER
+   //passos de validação do old amber.
+   test('Select OLD-AMBER', async ({ page }) => { 
+     
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -172,7 +177,6 @@ test('Select Pokémon Fossil', async ({ page }) => {
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of old-amber')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
-
 });
   
 
