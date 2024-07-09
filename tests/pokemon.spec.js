@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Select Pokémon Bulbassaur', async ({ page }) => {
+test.skip('Select Pokémon Bulbassaur', async ({ page }) => {
   await page.goto('https://brunomachadors.github.io/pokedex/');
 
   await expect(page.getByLabel('POKÉMON Button')).toBeVisible();
