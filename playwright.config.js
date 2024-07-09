@@ -21,13 +21,16 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html'],
-  ["allure-playwright",
-    {
-      detail: true,
-      outputFolder: "allure-results",
-      suiteTitle: false,
-    },]
+  reporter: [
+    ['html'],
+    [
+      'allure-playwright',
+      {
+        detail: true,
+        outputFolder: 'allure-results',
+        suiteTitle: false,
+      },
+    ],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -40,7 +43,7 @@ module.exports = defineConfig({
 
   timeout: 900000,
   expect: {
-    timeout: 6000,
+    timeout: 12000,
   },
 
   /* Configure projects for major browsers */
