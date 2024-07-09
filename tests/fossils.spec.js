@@ -2,9 +2,6 @@ const { test, expect } = require('@playwright/test');
 
 test('Select Pokémon Fossil', async ({ page }) => {
 
-  // Não precisa de commit e push - apenas os steps 
-  // Depois de concluir os steps, avisar o Bruno
-
 // 1 - ITEM EFFECT HONEY
   // Navegar até a página da Pokedex
   await page.goto('https://brunomachadors.github.io/pokedex/');
