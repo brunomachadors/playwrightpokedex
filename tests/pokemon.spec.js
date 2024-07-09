@@ -13,9 +13,17 @@ test('Select Pokémon Bulbassaur', async ({ page }) => {
   await expect(page.getByLabel('ITEMS Button')).toBeVisible();
   await expect(page.getByLabel('REGIONS Button')).toBeVisible();
   await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
-  await expect(page.getByLabel('Select the pokemon bulbasaur')).toBeVisible();
-
+  
   await page.getByLabel('Select the pokemon bulbasaur').click();
 
   await page.getByLabel('Switch to Photo').click();
+  await expect(page.getByLabel('Image of bulbasaur')).toBeVisible();
+  
+  await page.getByLabel('Switch to Info').click();
+  await expect(page.getByText('#1 BULBASAUR')).toBeVisible();
+  await expect(page.getByText('GRASS')).toBeVisible();
+  await expect(page.getByText('POISON')).toBeVisible();
+  await expect(page.getByText('A strange seed was planted on')).toBeVisible();
+  await expect(page.getByText('A strange')).toHaveText('A strange seed was planted on its back at birth.The plant sprouts and grows with this POKéMON.');
 });
+
