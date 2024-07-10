@@ -16,6 +16,5 @@ test.skip('Select Pokémon Bulbassaur', async ({ page }) => {
   await expect(page.getByLabel('Select the pokemon bulbasaur')).toBeVisible();
 
   await page.getByLabel('Select the pokemon bulbasaur').click();
-
   await page.getByLabel('Switch to Photo').click();
 });
