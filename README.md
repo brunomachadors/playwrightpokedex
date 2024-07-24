@@ -79,24 +79,111 @@ npx playwright test -g "add a todo item"
 - [x] Feedback e Melhoria Contínua
 
 ### Pré-visualização:
-![PlaywrightPokedex](public/pokedex.png)
+![PlaywrightPokedex](PlaywrightPokedex.png)
 
-## DESENVOLVIDO POR:
+## Desenvolvido por:
 
-###Bruno Machado
+### Bruno Machado
 
 - [GITHUB](https://github.com/brunomachadors)
 - [LINKEDIN](https://www.linkedin.com/in/brunomrs/)
 - [INSTAGRAM](https://www.instagram.com/brunomachadors/)
 
+### Débora Silva
+
+- [GITHUB](https://github.com/deborasilva2)
+- [LINKEDIN](https://www.linkedin.com/in/debora1silva2/)
+
+### Karina Yamashita
+
+- [GITHUB](https://github.com/KarinaYamashita)
+- [LINKEDIN](https://www.linkedin.com/in/karina-yamashita-b82b626b/)
+
+### Tatiana Honda
+
+- [GITHUB](https://github.com/TatianaHonda58)
+- [LINKEDIN](https://www.linkedin.com/in/tatiana-honda/)
+
 ## Todos os pacotes
+### Dependências Principais
 
+1. **express**: Framework web para Node.js que facilita a criação de aplicativos web e APIs.
+2. **axios**: Cliente HTTP baseado em promises para fazer requisições à PokeAPI ou outras APIs externas.
+3. **react**: Biblioteca JavaScript para construção de interfaces de usuário (se estiver utilizando React no frontend).
+4. **react-dom**: Pacote específico para manipulação do DOM e renderização de componentes React.
+5. **node-fetch**: Módulo para fazer requisições HTTP nativamente no Node.js.
+6. **dotenv**: Carrega variáveis de ambiente de um arquivo `.env` para configurar variáveis de configuração.
 
-### Licença:
+### Dependências de Desenvolvimento
+
+1. **playwright**: Framework de automação de testes para aplicativos web, utilizado para testes de ponta a ponta.
+2. **jest**: Framework de testes para JavaScript, usado para escrever e executar testes automatizados.
+3. **babel**: Transpilador JavaScript moderno que permite usar recursos JavaScript recentes em versões mais antigas do Node.js.
+4. **eslint**: Ferramenta de linting para identificar e reportar padrões de código problemáticos em JavaScript.
+5. **prettier**: Ferramenta de formatação de código que mantém o estilo consistente no projeto.
+6. **nodemon**: Utilitário que monitora alterações nos arquivos e reinicia automaticamente o servidor Node.js durante o desenvolvimento.
+
+## APIs do PlaywrightPokedex: 
+
+1. PokéAPI:
+•	Função: A principal API utilizada para obter dados sobre os Pokémons, como nome, tipo, estatísticas, habilidades, evoluções e sprites.
+• Documentação: https://pokeapi.co/
+2. Playwright:
+• Função: Uma biblioteca de teste de ponta a ponta para navegadores da web. Ela permite automatizar tarefas como clicar em botões, preencher formulários e navegar em páginas da web.
+• Documentação: https://playwright.dev/
+3. Express.js:
+• Função: Um framework web minimalista e flexível para Node.js. Ele é usado para criar o servidor web do PlaywrightPokedex.
+• Documentação: https://expressjs.com/
+4. Mongoose:
+• Função: Um Object Document Mapper (ODM) para Node.js. Ele facilita o trabalho com bancos de dados MongoDB.
+• Documentação: https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/
+5. Webpack:
+• Função: Um bundler de módulos estático para JavaScript. Ele agrupa e otimiza o código JavaScript para melhor desempenho.
+• Documentação: https://webpack.js.org/configuration/
+
+## Documentação do PlaywrightPokedex:
+• Repositório GitHub: A documentação oficial do PlaywrightPokedex está disponível no repositório GitHub do projeto: https://github.com/brunomachadors/playwrightpokedex
+• Wiki do GitHub: O repositório GitHub do PlaywrightPokedex também possui uma wiki que pode conter informações adicionais sobre o projeto: [URL inválido removido]
+• Comunidade online: Você pode encontrar informações e discussões sobre o PlaywrightPokedex em comunidades online como Reddit e fóruns de desenvolvedores.
+
+## Dificuldades apresentadas durante o processo de desenvolvimento:
+ ### 1. Integração com a PokeAPI
+
+- **Limitações da API:** A PokeAPI pode ter limitações de taxa de requisições ou de dados disponíveis, o que poderia exigir estratégias de cache ou gerenciamento cuidadoso das requisições para garantir desempenho e conformidade com os limites da API.
+
+- **Estrutura Complexa dos Dados:** Lidar com a estrutura complexa dos dados retornados pela PokeAPI e garantir a formatação correta para exibição na interface do usuário pode ter sido desafiador.
+
+### 2. Configuração do Ambiente de Desenvolvimento
+
+- **Configuração de Ambiente:** Configurar corretamente o ambiente de desenvolvimento com todas as dependências, incluindo Node.js, pacotes npm, e ferramentas como Playwright e Jest, pode ter sido um desafio inicial.
+
+- **Compatibilidade de Versões:** Garantir que todas as versões de pacotes e dependências sejam compatíveis entre si para evitar conflitos e problemas de compatibilidade.
+
+### 3. Implementação de Funcionalidades
+
+- **Complexidade das Funcionalidades:** Implementar funcionalidades como a busca de Pokémon, a exibição detalhada dos dados e a integração com Playwright para testes automatizados pode ter exigido tempo e esforço significativos para garantir que todas as partes funcionassem harmoniosamente.
+
+- **Lógica Assíncrona:** Lidar com operações assíncronas, como requisições à API e carregamento dinâmico de dados, pode ter sido desafiador, especialmente ao garantir que a aplicação seja responsiva e eficiente.
+
+### 4. Testes e Qualidade
+
+- **Testes Automatizados:** Escrever testes automatizados robustos usando Playwright e Jest para garantir a funcionalidade adequada da aplicação em diferentes cenários e interações do usuário.
+
+- **Garantia de Qualidade:** Assegurar a qualidade geral da aplicação, incluindo testes manuais, revisões de código e correção de bugs identificados durante o desenvolvimento.
+
+### 5. Otimização e Desempenho
+
+- **Otimização de Desempenho:** Identificar e resolver problemas de desempenho, como tempos de carregamento longos ou uso excessivo de recursos, para garantir uma experiência de usuário fluida.
+
+### 6. Documentação e Comunicação
+
+- **Documentação:** Manter a documentação do projeto atualizada e clara, incluindo o README.md e possíveis outras documentações técnicas para facilitar a colaboração e o entendimento do projeto por parte de outros desenvolvedores.
+
+## Licença:
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](https://github.com/brunomachadors/playwrightpokedex/blob/main/LICENSE) para detalhes.
 
-### Agradecimentos:
+## Agradecimentos:
 
 - Agradecimentos aos criadores da [PokeAPI](https://pokeapi.co/) por fornecerem o extenso conjunto de dados de Pokémon.
 - Inspirado pelas capacidades do [Playwright](https://playwright.dev/) para automação confiável de web e testes.
