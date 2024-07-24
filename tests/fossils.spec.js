@@ -28,7 +28,6 @@ const { test, expect } = require('@playwright/test');
   await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
 });
 
-   
    //passos de validação do root fossil.
    test('Select ROOT-FOSSIL', async ({ page }) => { 
 
@@ -58,7 +57,6 @@ const { test, expect } = require('@playwright/test');
    await expect(page.getByLabel('Image of root-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
 });
-
 
    //passos de validação do claw fossil.
    test('Select CLAW-FOSSIL', async ({ page }) => { 
@@ -90,7 +88,6 @@ const { test, expect } = require('@playwright/test');
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
 });
 
-
    //passos de validação do helix fossil.
    test('Select HELIX-FOSSIL', async ({ page }) => { 
 
@@ -121,7 +118,6 @@ const { test, expect } = require('@playwright/test');
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
 });
 
-
    //passos de validação do dome fossil.
    test('Select DOME-FOSSIL', async ({ page }) => { 
 
@@ -151,7 +147,6 @@ const { test, expect } = require('@playwright/test');
    await expect(page.getByLabel('Image of dome-fossil')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
 });
-
 
    //passos de validação do old amber.
    test('Select OLD-AMBER', async ({ page }) => { 
