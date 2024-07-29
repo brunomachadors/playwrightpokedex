@@ -1,46 +1,34 @@
-import { skip } from 'node:test';
-import { TYPES } from '../Data/types';
-
 const { test, expect } = require('@playwright/test');
+import { TYPES } from '../Data/types';
+const { POManager } = require('../pages/POManager');
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://brunomachadors.github.io/pokedex/');
-    await expect(page.getByLabel('TYPES Button')).toBeVisible();
-    await page.getByLabel('TYPES Button').click();
+    const poManager = new POManager(page);
+    const homepage = poManager.getHomePage();
+    const type = poManager.getTypePage();
+    await homepage.navegateToUrl();
+    await homepage.clickBntTypes();
+    await type.validateTypeInfoIsLoadAfterClick();
 });
 
 test('Hard code - Validate that fighting icon Double Damage is showed to normal type', async ({ page }) => {
-    await expect(page.getByLabel('Select Type')).toBeVisible();
-    await page.getByLabel('Select the type normal').click();
-    await expect(page.getByLabel('Switch to Info')).toBeVisible();
-    await page.getByLabel('Switch to Info').click();
+    const poManager = new POManager(page);
+    const homepage = poManager.getHomePage();
+    const type = poManager.getTypePage();
 
-    await expect(page.getByLabel('White Screen').getByText('NORMAL')).toBeVisible();
-    await expect(page.getByText('DOUBLE DAMAGEFROM:')).toBeVisible();
-    await expect(page.getByRole('img', { name: 'fighting icon' })).toBeVisible();
+    await homepage.clickBntInfo();
+    await type.clickOnSelectType();
+    await type.verifyTypeInfoToDoubleDamage();
 });
 
 test('Hard code - Validate that Immune to ghost is showed to normal type', async ({ page }) => {
-    await expect(page.getByLabel('Select Type')).toBeVisible();
-    await page.getByLabel('Select the type normal').click();
-    await expect(page.getByLabel('Switch to Info')).toBeVisible();
-    await page.getByLabel('Switch to Info').click();
+    const poManager = new POManager(page);
+    const homepage = poManager.getHomePage();
+    const type = poManager.getTypePage();
 
-    await expect(page.getByLabel('White Screen').getByText('NORMAL')).toBeVisible();
-    await expect(page.getByText('IMUNITIES')).toContainText('IMUNITIES');
-    await expect(page.getByLabel('Immune to ghost').getByText('GHOST')).toContainText('GHOST');
-});
-
-test('Hard code - Validate that ground icon and psychic icon Double Damage is showed to poison type', async ({ page }) => {
-    await expect(page.getByLabel('Select Type')).toBeVisible();
-    await page.getByLabel('Select the type poison').click();
-    await expect(page.getByLabel('Switch to Info')).toBeVisible();
-    await page.getByLabel('Switch to Info').click();
-
-    await expect(page.getByLabel('White Screen').getByText('POISON')).toBeVisible();
-    await expect(page.getByText('DOUBLE DAMAGEFROM:')).toBeVisible();
-    await expect(page.getByRole('img', { name: 'ground icon' })).toBeVisible();
-    await expect(page.getByRole('img', { name: 'psychic icon' })).toBeVisible();
+    await homepage.clickBntInfo();
+    await type.clickOnSelectType();
+    await type.verifyTypeInfoToImmune();
 });
 
 test.describe('Verify in batch the correct display of type information', () => {

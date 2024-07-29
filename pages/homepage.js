@@ -17,6 +17,7 @@ class Homepage {
         await this.pokemon.click();
     } 
     async clickBntTypes (){
+        expect(this.types).toBeVisible();
         await this.types.click();
     }
     async clickBntItems (){
@@ -34,13 +35,16 @@ class Homepage {
     async clickBntInfo (){
         await this.infoBtn.click();
     }
+    async validateBtnTypesIsVisible() {
+        expect(this.types).toBeVisible();
+    }
     async validateHomePage() {
-        expect(this.pokemon).toBeVisible();
+        expect(this.photoBtn).toBeVisible();
         expect(this.infoBtn).toBeVisible();
         expect(this.infoBtn).toHaveRole('button');
-        expect(this.types).toHaveText('TYPES')
+        expect(this.types).toHaveText('TYPES');
+        expect
     }
-
 }
 
 module.exports = { Homepage }
