@@ -112,6 +112,6 @@ npx playwright test --ui
 
 ![Pichu](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png)
 
-### Karina gosta do Charizard
+### Karina gosta do Jigglypuff
 
-![Charizard](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png)
+![Jigglypuff](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png)
