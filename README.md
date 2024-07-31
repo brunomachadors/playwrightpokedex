@@ -8,52 +8,55 @@ PlaywrightPokedex é um framework de testes para explorar dados de Pokémon usan
 - **PokeAPI:** Uma API RESTful que oferece uma riqueza de dados de Pokémon, incluindo detalhes das espécies, habilidades, tipos e mais.
 - **JavaScript:** Tecnologias web padrão para construir a interface frontend e lidar com interações.
 - **Node.js:** Potencializa o backend para lidar com requisições à API e servir a aplicação.
-  
-## Jornada de Desenvolvimento:
 
-O PlaywrightPokedex é um framework de testes projetado para explorar dados sobre Pokémon, utilizando o Playwright para realizar testes de ponta a ponta. Com a integração da PokeAPI, o framework permite acessar informações detalhadas sobre diversas espécies de Pokémon, oferecendo aos usuários a capacidade de pesquisar, visualizar detalhes e interagir com os dados em um ambiente de teste realista.
-As tecnologias utilizadas foram Playwright, PokeAPI, JavaScript e Node.js.
+## Jornada de Desenvolvimento:
 
 Na primeira etapa, fizemos o desenvolvimento dos types, fossils e regions, porque existia uma performance muito ruim da parte da listagem dos pokémons por causa de um número de pokémons que era muito elevado. Portanto, nós priorizamos ter testes mais estáveis de automação nesta etapa. Dentro da nossa abordagem, nós estamos tentando estabelecer uns padrões ainda da automação, como por exemplo utilizar o base url, o page object modal e o test describe and test step.
 
 ## Como Rodar:
 
 Instalação do PlaywrightPokedex:
+
 1. Clone o repositório do [GitHub](https://github.com/brunomachadors/playwrightpokedex)
 
 2. Instale todas as dependências
+
 ```bash
 npm install
 ```
 
 Comandos utéis:
-1. Executar os testes 
+
+1. Executar os testes
+
 ```bash
 npx playwright test
 ```
-2. Para ver os relatórios abertos em HTML 
+
+2. Para ver os relatórios abertos em HTML
+
 ```bash
 npx playwright report
 ```
+
 3. Executar os testes no modo que usa a interface
-```bash   
+
+```bash
 npx playwright test --ui
 ```
 
 ## Tarefas
 
-- [x] Instalação e configuração do projeto 
+- [x] Instalação e configuração do projeto
 - [x] Automação da página types, regions e fossils
 - [ ] Page objects modal
 - [ ] Base url
-- [ ] Test describe 
+- [ ] Test describe
 - [ ] Test step
 
-## Pré-visualização: (**Obs.: Colocar o Playwrigh para exibir no modo ui e colocar uma imagem funcionando.**)
-![PlaywrightPokedex](PlaywrightPokedex.png)
-
-
 ## Desenvolvido por:
+
+![PlaywrightPokedex](https://res.cloudinary.com/dtglidvcw/image/upload/v1719424346/BUGBUSTER/ddpwunvf3prut2sbwyfo.png)
 
 ### **Bruno Machado**
 
@@ -82,21 +85,33 @@ npx playwright test --ui
 2. **Eslint**: Ferramenta de linting para identificar e reportar padrões de código problemáticos em JavaScript.
 3. **Prettier**: Ferramenta de formatação de código que mantém o estilo consistente no projeto.
 
-## API do PlaywrightPokedex: 
+## API do PlaywrightPokedex:
 
 **PokéAPI**:
+
 - Função: A principal API utilizada para obter dados sobre os Pokémons, como nome, tipo, estatísticas, habilidades, evoluções e sprites.
 - Documentação: https://pokeapi.co/
 
-## Documentação do PlaywrightPokedex:
-• Repositório GitHub: A documentação oficial do PlaywrightPokedex está disponível no repositório GitHub do projeto. 
-https://github.com/brunomachadors/playwrightpokedex
-
-## Dificuldade Apresentada Durante o Processo de Desenvolvimento:
-
-- A funcionalidade de pokémon retornava uma quantidade muito grande de pokémons, o que resultava em quebra. Por essa razão, decidimos não aautorizá-la dentro da automação. Sendo que um problema semelhante ocorre com a quantidade de itens listados.
-
 ## Considerações:
+
 - Esse projeto de automação foi desenvolvido durante a Mentoria do projeto voluntário Diaristando, sendo o nosso mentor o Bruno Machado.
 - Os dispositivos que estamos cobrindo são os navegadores Chrome, Firefox, Safari.
 - Projeto Diaristando: O projeto visa simplificar e otimizar o processo de contratação de serviços de diaristas, proporcionando uma plataforma inovadora que conecta de forma eficiente clientes finais a prestadoras de serviços de limpeza.
+
+## NOSSOS POKEMONS FAVORITOS
+
+### Bruno gosta do Gengar
+
+![Gengar](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png)
+
+### Tatiana gosta do Piplup
+
+![Piplup](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png)
+
+### Débora gosta do Pichu
+
+![Pichu](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png)
+
+### Karina gosta do Charizard
+
+![Charizard](https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png)
