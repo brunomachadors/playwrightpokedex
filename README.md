@@ -92,11 +92,11 @@ npx playwright test --ui
 • Repositório GitHub: A documentação oficial do PlaywrightPokedex está disponível no repositório GitHub do projeto. 
 https://github.com/brunomachadors/playwrightpokedex
 
-## Dificuldade apresentada durante o processo de desenvolvimento:
+## Dificuldade Apresentada Durante o Processo de Desenvolvimento:
 
-- A funcionalidade de pokémon retornava uma quantidade muito grande de pokémons, o que resultava em quebra. Por essa razão, decidimos não aautorizá-la dentro da automação. Um problema semelhante acontece com a quantidade de itens listados.
+- A funcionalidade de pokémon retornava uma quantidade muito grande de pokémons, o que resultava em quebra. Por essa razão, decidimos não aautorizá-la dentro da automação. Sendo que um problema semelhante ocorre com a quantidade de itens listados.
 
 ## Considerações:
 - Esse projeto de automação foi desenvolvido durante a Mentoria do projeto voluntário Diaristando, sendo o nosso mentor o Bruno Machado.
-- Dispositivos que estamos cobrindo são os navegadores Chrome, Firefox, Safari.
-- Informações do Projeto Diaristando: O projeto visa simplificar e otimizar o processo de contratação de serviços de diaristas, proporcionando uma plataforma inovadora que conecta de forma eficiente clientes finais a prestadoras de serviços de limpeza.
+- Os dispositivos que estamos cobrindo são os navegadores Chrome, Firefox, Safari.
+- Projeto Diaristando: O projeto visa simplificar e otimizar o processo de contratação de serviços de diaristas, proporcionando uma plataforma inovadora que conecta de forma eficiente clientes finais a prestadoras de serviços de limpeza.
