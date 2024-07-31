@@ -30,7 +30,11 @@ const { test, expect } = require('@playwright/test');
 
    //passos de validação do root fossil.
    test('Select ROOT-FOSSIL', async ({ page }) => { 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 07c867a836c704c13c4fdb502905280be4112b3b
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -90,7 +94,11 @@ const { test, expect } = require('@playwright/test');
 
    //passos de validação do helix fossil.
    test('Select HELIX-FOSSIL', async ({ page }) => { 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 07c867a836c704c13c4fdb502905280be4112b3b
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -150,7 +158,11 @@ const { test, expect } = require('@playwright/test');
 
    //passos de validação do old amber.
    test('Select OLD-AMBER', async ({ page }) => { 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 07c867a836c704c13c4fdb502905280be4112b3b
    // Navegar até a página da Pokedex
    await page.goto('https://brunomachadors.github.io/pokedex/');
    await expect(page.getByLabel('FOSSILS Button')).toBeVisible();
@@ -176,6 +188,5 @@ const { test, expect } = require('@playwright/test');
    await page.getByLabel('Switch to Photo').click();
    await expect(page.getByLabel('Image of old-amber')).toBeVisible();
    await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
-
 });
 
