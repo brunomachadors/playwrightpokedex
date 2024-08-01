@@ -32,7 +32,7 @@ export const TYPES = [
     },
     {
         "name": "ghost",
-        "doubleDamage": "ghost",
+        "doubleDamage": "dark",
         "immune": "normal"
     },
     {
