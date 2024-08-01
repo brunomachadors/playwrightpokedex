@@ -1,4 +1,3 @@
-import { skip } from 'node:test';
 import { TYPES } from '../Data/types';
 
 const { test, expect } = require('@playwright/test');
