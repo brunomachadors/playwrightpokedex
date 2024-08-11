@@ -8,7 +8,7 @@ PlaywrightPokedex é um framework de testes para explorar dados de Pokémon usan
 - **PokeAPI:** Uma API RESTful que oferece uma riqueza de dados de Pokémon, incluindo detalhes das espécies, habilidades, tipos e mais.
 - **JavaScript:** Tecnologias web padrão para construir a interface frontend e lidar com interações.
 - **Node.js:** Potencializa o backend para lidar com requisições à API e servir a aplicação.
-- **Allure Report:** É uma ferramenta open-source que gera relatórios HTML interativos e personalizados a partir dos resultados de testes automatizados, sendo que é possível integrar diversas ferramentas de teste, como Playwright.
+- **Allure Report:** É uma ferramenta que transforma os resultados de testes automatizados feitos com o Playwright em relatórios visuais e detalhados, facilitando a análise e a identificação de falhas.
 
 ## Jornada de Desenvolvimento:
 
@@ -52,8 +52,8 @@ npx playwright test --ui
 - [x] Automação da página types, regions e fossils
 - [x] Page objects model
 - [x] Base url
-- [ ] Test describe
-- [ ] Test step
+- [x] Test describe
+- [x] Test step
 
 ## Desenvolvido por:
 
