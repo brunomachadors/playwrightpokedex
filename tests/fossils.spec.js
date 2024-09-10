@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
+teststeps
 test.describe('Validate Fossils', () => {
   test.beforeEach(
     'Load Pokedex and clicks fossils button',
@@ -207,4 +208,3 @@ test.describe('Validate Fossils', () => {
       await expect(page.getByText('Category:DEX-COMPLETION')).toBeVisible();
     });
   });
-});
